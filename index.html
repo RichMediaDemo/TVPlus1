@@ -8,12 +8,12 @@
   <meta name="environment" content="gwd-dv360">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <style>
-  .landing-wrapper {
-    background: linear-gradient(to bottom, #000000, #111111);
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #1c1c1c);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    font-family: sans-serif;
-    text-align: center;
-    padding-bottom: 50px;
   }
   .masthead {
     background: url("assets/BackRound.png") no-repeat center center;
@@ -22,37 +22,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
   }
   .section {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 40px auto;
-    background-color: #1c1c1c;
-    border-radius: 12px;
-    padding: 20px;
+    background-color: #222;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.3);
   }
   .demo-preview {
-    width: 970px;
-    margin: 20px auto;
+    width: 100%;
+    height: 270px;
+    margin: 20px 0;
     border: 3px solid #ffa500;
     border-radius: 12px;
     overflow: hidden;
   }
   .benefits {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
   }
   .benefit {
     background-color: #2e2e2e;
-    padding: 15px;
+    padding: 20px;
     border-radius: 10px;
-    width: 22%;
-    font-size: 14px;
+    font-size: 16px;
+    text-align: center;
   }
-</style>
-  
+</style>  
 <link href="gwdpage_style.css" rel="stylesheet" data-version="13" data-exports-type="gwd-page">
   <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="14" data-exports-type="gwd-pagedeck">
   <link href="gwdgooglead_style.css" rel="stylesheet" data-version="9" data-exports-type="gwd-google-ad">
@@ -719,25 +721,23 @@
         handleAdInitialized, false);
     })();
   </script>
-<div class="landing-wrapper">
-  <div class="masthead">
-    TV+ Rich Media Deneyimi
+<div class="masthead">
+  TV+ Rich Media Deneyimi
+</div>
+
+<div class="section">
+  <h2 style="text-align:center;">Kategorilere Özel Sahnelerle TV+ Dünyasını Keşfedin</h2>
+  <p style="text-align:center; font-weight:bold;">Mağaza sunumları, toplantılar veya brief paylaşımlarında kullanılabilir.</p>
+
+  <div class="demo-preview">
+    <iframe src="TVPlus1/index.html" width="100%" height="270" style="border:0;"></iframe>
   </div>
 
-  <div class="section">
-    <h2>Kategorilere özel sahnelerle TV+ dünyasını keşfedin</h2>
-    <p><strong>Mağaza sunumları, toplantılar veya brief paylaşımlarında kullanılabilir.</strong></p>
-
-    <div class="demo-preview">
-      <iframe src="TVPlus1/index.html" width="970" height="250" style="border:0;"></iframe>
-    </div>
-
-    <div class="benefits">
-      <div class="benefit">⚡ Anında kategori seçimi</div>
-      <div class="benefit">📺 Kategoriye özel sahneler</div>
-      <div class="benefit">🎬 Gerçek TV ekranı hissi</div>
-      <div class="benefit">🏆 Turkcell TV+ premium deneyimi</div>
-    </div>
+  <div class="benefits">
+    <div class="benefit">⚡ Anında kategori seçimi</div>
+    <div class="benefit">📺 Kategoriye özel sahneler</div>
+    <div class="benefit">🎬 Gerçek TV ekranı hissi</div>
+    <div class="benefit">🏆 Turkcell TV+ Premium deneyimi</div>
   </div>
 </div>
 
